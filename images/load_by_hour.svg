@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 620 200" width="620" height="200" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif"><rect width="620" height="200" fill="#ffffff"/>
+<text x="6" y="14" font-size="9.2" font-weight="700" fill="#605E5C">PIC MOYEN À BORD PAR HEURE DE DÉPART · TRAM 28 · 16 NOVEMBRE 2026</text>
+<line x1="34" x2="610" y1="166.0" y2="166.0" stroke="#edebe9"/><text x="29" y="169.0" text-anchor="end" font-size="7.4" fill="#605E5C">0</text>
+<line x1="34" x2="610" y1="119.3" y2="119.3" stroke="#edebe9"/><text x="29" y="122.3" text-anchor="end" font-size="7.4" fill="#605E5C">25</text>
+<line x1="34" x2="610" y1="72.7" y2="72.7" stroke="#edebe9"/><text x="29" y="75.7" text-anchor="end" font-size="7.4" fill="#605E5C">50</text>
+<line x1="34" x2="610" y1="26.0" y2="26.0" stroke="#edebe9"/><text x="29" y="29.0" text-anchor="end" font-size="7.4" fill="#605E5C">75</text>
+<rect x="38.0" y="111.9" width="30.4" height="54.1" rx="2" fill="#9DC3E6"/><text x="53.2" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">7 h</text>
+<rect x="76.4" y="94.9" width="30.4" height="71.1" rx="2" fill="#9DC3E6"/><text x="91.6" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">8 h</text>
+<rect x="114.8" y="103.8" width="30.4" height="62.2" rx="2" fill="#9DC3E6"/><text x="130.0" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">9 h</text>
+<rect x="153.2" y="85.7" width="30.4" height="80.3" rx="2" fill="#9DC3E6"/><text x="168.4" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">10 h</text>
+<rect x="191.6" y="63.5" width="30.4" height="102.5" rx="2" fill="#E8A0A6"/><text x="206.8" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">11 h</text>
+<text x="206.8" y="59.5" text-anchor="middle" font-size="7.2" font-weight="700" fill="#C50F1F">2/9</text>
+<rect x="230.0" y="49.0" width="30.4" height="117.0" rx="2" fill="#C50F1F"/><text x="245.2" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">12 h</text>
+<text x="245.2" y="45.0" text-anchor="middle" font-size="7.2" font-weight="700" fill="#C50F1F">9/9</text>
+<rect x="268.4" y="42.1" width="30.4" height="123.9" rx="2" fill="#C50F1F"/><text x="283.6" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">13 h</text>
+<text x="283.6" y="38.1" text-anchor="middle" font-size="7.2" font-weight="700" fill="#C50F1F">9/9</text>
+<rect x="306.8" y="52.5" width="30.4" height="113.5" rx="2" fill="#C50F1F"/><text x="322.0" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">14 h</text>
+<text x="322.0" y="48.5" text-anchor="middle" font-size="7.2" font-weight="700" fill="#C50F1F">6/9</text>
+<rect x="345.2" y="66.1" width="30.4" height="99.9" rx="2" fill="#E8A0A6"/><text x="360.4" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">15 h</text>
+<text x="360.4" y="62.1" text-anchor="middle" font-size="7.2" font-weight="700" fill="#C50F1F">2/8</text>
+<rect x="383.6" y="80.1" width="30.4" height="85.9" rx="2" fill="#9DC3E6"/><text x="398.8" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">16 h</text>
+<rect x="422.0" y="95.1" width="30.4" height="70.9" rx="2" fill="#9DC3E6"/><text x="437.2" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">17 h</text>
+<rect x="460.4" y="100.3" width="30.4" height="65.7" rx="2" fill="#9DC3E6"/><text x="475.6" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">18 h</text>
+<rect x="498.8" y="117.1" width="30.4" height="48.9" rx="2" fill="#9DC3E6"/><text x="514.0" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">19 h</text>
+<rect x="537.2" y="127.0" width="30.4" height="39.0" rx="2" fill="#9DC3E6"/><text x="552.4" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">20 h</text>
+<rect x="575.6" y="125.1" width="30.4" height="40.9" rx="2" fill="#9DC3E6"/><text x="590.8" y="177" text-anchor="middle" font-size="7.6" fill="#605E5C">21 h</text>
+<line x1="34" x2="610" y1="57.7" y2="57.7" stroke="#C50F1F" stroke-width="1.3" stroke-dasharray="5 3"/><text x="608" y="53.7" text-anchor="end" font-size="7.8" font-weight="800" fill="#C50F1F">capacité 58</text>
+<text x="6" y="196" font-size="7.8" fill="#605E5C">En rouge : départs saturés sur le nombre de départs de l'heure. À 12 h et 13 h, tous les trams dépassent 58 passagers.</text>
+</svg>

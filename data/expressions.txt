@@ -1,0 +1,109 @@
+PIPELINE 16 : LE PIPELINE QUI SAIT ATTENDRE, LE TRAM 28 DE LISBONNE
+Chaque valeur est sur sa propre ligne : copiez la ligne entière, sans le titre entre crochets.
+
+==================== ① ② Objets ====================
+
+[Espace de travail]
+Fabric_Pipeline_16
+
+[Lakehouse (case Schémas décochée)]
+LH_Lisboa
+
+[Dossier dans Fichiers]
+rides
+
+[Entrepôt]
+WH_Lisboa
+
+[Pipeline]
+PL_Tram
+
+==================== ③ Load rides API (Actions Fabric, en attente) ====================
+
+[Nom de l'activité]
+Load rides API
+
+[Type d'élément]
+Lakehouse
+
+[Requête d'API (si la liste la propose)]
+Load table
+
+[État de l'activité]
+Désactivé
+
+[Marquer l'activité comme]
+Réussite
+
+==================== ④ Load rides (Copy data) ====================
+
+[Nom de l'activité]
+Load rides
+
+[Source]
+LH_Lisboa, Fichiers, rides/rides_2026-11-16.csv, Texte délimité, en-tête coché
+
+[Destination : nouvelle table, action Remplacer]
+rides
+
+[Nouvelle tentative]
+2
+
+[Intervalle (s)]
+30
+
+[Condition de nouvelle tentative : Code d'erreur, Contient]
+429
+
+==================== ⑤ Post debug (Teams, sonde) ====================
+
+[Nom de l'activité]
+Post debug
+
+[Titre]
+Debug
+
+[Debug (à coller directement dans le champ Message)]
+@{string(activity('Load rides').output)}
+
+==================== ⑥ Refresh endpoint ====================
+
+[Nom de l'activité]
+Refresh endpoint
+
+==================== ⑦ Read tram (Script, sur WH_Lisboa) ====================
+
+[Nom de l'activité]
+Read tram
+
+[Requête]
+Le contenu de sql/01_read_tram.sql
+
+==================== ⑧ Post tram (Teams) ====================
+
+[Nom de l'activité]
+Post tram
+
+[Titre]
+Tram 28
+
+[Teams message (à coller directement dans le champ Message)]
+@{activity('Read tram').output.resultSets[0].rows[0].msg}
+
+==================== ⑨ Désactiver Post debug ====================
+
+[État de l'activité]
+Désactivé
+
+[Marquer l'activité comme]
+Réussite
+
+==================== Contrôle ====================
+
+[Message attendu dans Teams]
+Tram 28, Lisbonne, 16 novembre 2026 : 128 départs, 28 saturés (plus de 58 à bord). Point noir : Portas do Sol, 24 passages saturés. Heure critique : 13 h, 9 sur 9 départs saturés. Record : 73 passagers.
+
+==================== Le jour où le connecteur Fabric arrive ====================
+
+[Corps (body) de Load rides API]
+{"relativePath": "Files/rides/rides_2026-11-16.csv", "pathType": "File", "mode": "Overwrite", "recursive": false, "formatOptions": {"format": "Csv", "header": true, "delimiter": ","}}

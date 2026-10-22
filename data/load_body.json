@@ -1,0 +1,11 @@
+{
+  "relativePath": "Files/rides/rides_2026-11-16.csv",
+  "pathType": "File",
+  "mode": "Overwrite",
+  "recursive": false,
+  "formatOptions": {
+    "format": "Csv",
+    "header": true,
+    "delimiter": ","
+  }
+}
